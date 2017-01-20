@@ -50,10 +50,11 @@ module.exports = {
 
     new ExtractTextPlugin('[name].[hash].css'),
 
+    // Fixes warnings on windows
     new webpack.ContextReplacementPlugin(
      /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
      __dirname
-   ),
+    ),
 
     new HtmlWebpackPlugin({
       template: 'src/index.html'
