@@ -1,3 +1,7 @@
+# Custom Ignores
+# Production
+dist
+
 # Logs
 logs
 *.log
