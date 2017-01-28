@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import '../../../../public/css/styles.css';
 
 @Component({
-  selector: 'comp-main',
+  selector: 'sg-main',
   templateUrl: './main.component.pug',
   styleUrls: ['./main.component.css']
 })
