@@ -4,7 +4,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var helpers = require('./helpers');
 
 module.exports = {
-  // context: helpers.root()
+  context: helpers.root(),
   entry: {
     'polyfills': './src/polyfills.ts',
     'vendor': './src/vendor.ts',
@@ -26,13 +26,16 @@ module.exports = {
         use: [{loader: 'html-loader', options: {minimize: false}}]
       },
       {
+          test: /\.pug$/,
+          use: [{loader: 'pug-html-loader', options: {}}]
+      },
+      {
         test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
         use: ['file-loader?name=assets/[name].[hash].[ext]']
       },
       {
         test: /\.css$/,
         exclude: helpers.root('src', 'app'),
-        //loader: 'css-loader'
         loader: ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader' })
       },
       {
@@ -57,7 +60,7 @@ module.exports = {
     ),
 
     new HtmlWebpackPlugin({
-      template: 'src/index.html'
+      template: 'src/index.pug'
     })
   ]
 };

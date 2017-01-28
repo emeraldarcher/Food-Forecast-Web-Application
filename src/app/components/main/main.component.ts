@@ -3,7 +3,7 @@ import '../../../../public/css/styles.css';
 
 @Component({
   selector: 'comp-main',
-  templateUrl: './main.component.html',
+  templateUrl: './main.component.pug',
   styleUrls: ['./main.component.css']
 })
 
