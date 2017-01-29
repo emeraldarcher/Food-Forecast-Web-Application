@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import '../../../../public/css/styles.css';
-import { MdToolbar} from '@angular/material';
 
 @Component({
   selector: 'sg-nav',

@@ -14,7 +14,7 @@ import { MaterialModule } from '@angular/material';
     MainComponent,
     NavComponent
   ],
-  bootstrap: [ MainComponent, NavComponent ]
+  bootstrap: [ MainComponent ]
 })
 
 export class AppModule { }
