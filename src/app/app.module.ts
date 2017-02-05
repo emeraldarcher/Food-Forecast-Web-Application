@@ -1,26 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
-import { RouterModule, Routes } from '@angular/router';
+import { AppRoutingModule } from './modules/app-routing.module';
 import { MainComponent } from './components/main/main.component';
 import { NavComponent } from './components/nav/nav.component';
 import { MaterialModule } from '@angular/material';
 import { HomeComponent } from './components/home/home.component';
-
-const appRoutes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-];
+import { PageNotFoundComponent } from './components/page_not_found/page-not-found.component';
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(appRoutes),
     BrowserModule,
-    MaterialModule.forRoot()
+    MaterialModule.forRoot(),
+    AppRoutingModule
   ],
   declarations: [
     MainComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    PageNotFoundComponent
   ],
   bootstrap: [ MainComponent ]
 })
