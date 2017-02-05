@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import '../../../../public/css/styles.css';
+import '../../../../public/scss/styles.scss';
 
 @Component({
   selector: 'sg-main',
   templateUrl: './main.component.pug',
-  styleUrls: ['./main.component.css']
+  styleUrls: ['main.component.scss']
 })
 
 export class MainComponent { }

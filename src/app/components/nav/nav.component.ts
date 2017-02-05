@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import '../../../../public/css/styles.css';
+import '../../../../public/scss/styles.scss';
 
 @Component({
   selector: 'sg-nav',
   templateUrl: './nav.component.pug',
-  styleUrls: ['./nav.component.css']
+  styleUrls: ['nav.component.scss']
 })
 
 export class NavComponent { }
