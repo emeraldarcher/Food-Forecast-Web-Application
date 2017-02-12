@@ -14,5 +14,5 @@ import 'hammerjs';
 
 // CSS
 import 'normalize-css';
-import 'material-design-icons/iconfont/material-icons.css';
-// import '@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+// import 'material-design-icons/iconfont/material-icons.css';
+// import 'fontawesome/index.js';

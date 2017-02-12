@@ -5,6 +5,7 @@ import { MainComponent } from './components/main/main.component';
 import { NavComponent } from './components/nav/nav.component';
 import { MaterialModule } from '@angular/material';
 import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
 import { PageNotFoundComponent } from './components/page_not_found/page-not-found.component';
 
 @NgModule({
@@ -17,6 +18,7 @@ import { PageNotFoundComponent } from './components/page_not_found/page-not-foun
     MainComponent,
     NavComponent,
     HomeComponent,
+    LoginComponent,
     PageNotFoundComponent
   ],
   bootstrap: [ MainComponent ]
