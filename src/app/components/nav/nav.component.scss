@@ -25,20 +25,19 @@
 .router-links {
     a {
         font-size: 18px;
-        background-color: $primary_color_dark;
-        color: $primary_color_light;  
+        color: white;
+        background-color: $primary_color_dark;        
     }
 
     a i {
         margin-left: 8px;
         font-size: 20px;
         vertical-align: baseline;
-        // color: gainsboro;
     }
 
     a.active {
-        background-color: $primary_color_light;
-        color: $primary_color_dark;
+        color: $secondary_text;
+        background-color: $accent_color;
     }
 }
 
