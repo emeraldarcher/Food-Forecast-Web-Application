@@ -1,3 +1,5 @@
+@import "../../../../public/scss/styles.scss";
+
 .fill-remaining-space {
     /*This fills the remaining space, by using flexbox.*/
     /*Every toolbar row uses a flexbox row layout.*/
@@ -9,29 +11,34 @@
 }
 
 .application {
+    margin-left: 60px;
     font-weight: bold;
+    font-size: 36px;
 }
 
 .logo {
-    margin-right: 5px;
-
-    .fa-cutlery {
-        top: 2px;
-        color: gainsboro;
-    }
+    height: 48px;
+    position: absolute;
+    clip: rect(1px,47px,47px,1px);
 }
 
 .router-links {
-    a i {
-        color: gainsboro;
-    }
-
     a {
-        text-decoration: none;
+        font-size: 18px;
+        background-color: $primary_color_dark;
+        color: $primary_color_light;  
     }
 
-    a.active i {
-        color: whitesmoke;
+    a i {
+        margin-left: 8px;
+        font-size: 20px;
+        vertical-align: baseline;
+        // color: gainsboro;
+    }
+
+    a.active {
+        background-color: $primary_color_light;
+        color: $primary_color_dark;
     }
 }
 

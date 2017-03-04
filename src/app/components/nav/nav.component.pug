@@ -1,13 +1,11 @@
 md-toolbar(color="primary")
-    span(class="fa-stack logo")
-        i(class="fa fa-cloud fa-inverse fa-stack-2x")
-        i(class="fa fa-cutlery fa-stack-1x")
+    img(class="logo" src="../../../../public/images/logo.png")
     span(class="application") Food Forecast
     span(class="fill-remaining-space")
     div(class="router-links")
-        a(routerLink="/home" color="accent" routerLinkActive="active")
-            i(class="fa fa-home fa-2x")
-        a(routerLink="/menuplan" color="accent" routerLinkActive="active")
-            i(class="fa fa-calendar fa-2x")
-        a(routerLink="/shoppinglist" color="accent" routerLinkActive="active")
-            i(class="fa fa-shopping-basket fa-2x")
+        a(routerLink="/home" md-raised-button color="primary" routerLinkActive="active") Home
+            i(class="fa fa-home")
+        a(routerLink="/menuplan" md-raised-button color="primary" routerLinkActive="active") Menu Plan
+            i(class="fa fa-calendar")
+        a(routerLink="/shoppinglist" md-raised-button color="primary" routerLinkActive="active") Shopping List
+            i(class="fa fa-shopping-basket")
