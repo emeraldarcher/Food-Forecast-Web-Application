@@ -27,7 +27,7 @@ module.exports = {
             },
             {
               test: /\.pug$/,
-              use: [{loader: 'pug-html-loader', options: {}}]
+              use: [{loader: 'html-loader', options: {}}, {loader: 'pug-html-loader', options: {}}]
             },
             {
                 test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
