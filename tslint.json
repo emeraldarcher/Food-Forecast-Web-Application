@@ -92,13 +92,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "sg",
+      "ff",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "sg",
+      "ff",
       "kebab-case"
     ],
     "use-input-property-decorator": true,

@@ -1,27 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
-import { AppRoutingModule } from './modules/app-routing.module';
-import { MainComponent } from './components/main/main.component';
-import { NavComponent } from './components/nav/nav.component';
+import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from '@angular/material';
-import { HomeComponent } from './components/home/home.component';
-import { LoginComponent } from './components/login/login.component';
-import { PageNotFoundComponent } from './components/page_not_found/page-not-found.component';
+
+import { ErrorsModule } from './errors/errors.module';
+import { UsersModule } from './users/users.module';
+
+import { AppComponent } from './app.component';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    MaterialModule.forRoot(),
-    AppRoutingModule
-  ],
-  declarations: [
-    MainComponent,
-    NavComponent,
-    HomeComponent,
-    LoginComponent,
-    PageNotFoundComponent
-  ],
-  bootstrap: [ MainComponent ]
+    imports: [
+        BrowserModule,
+        MaterialModule, // .forRoot(),
+
+        ErrorsModule,
+        UsersModule,
+
+        AppRoutingModule
+    ],
+    declarations: [
+        AppComponent
+    ],
+    bootstrap: [ AppComponent ]
 })
 
 export class AppModule { }
