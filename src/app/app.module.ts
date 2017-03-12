@@ -5,16 +5,20 @@ import { MaterialModule } from '@angular/material';
 
 import { ErrorsModule } from './errors/errors.module';
 import { UsersModule } from './users/users.module';
+import { ForecastsModule } from './forecasts/forecasts.module';
+import { NavigationModule } from './navigation/navigation.module';
 
 import { AppComponent } from './app.component';
 
 @NgModule({
     imports: [
         BrowserModule,
-        MaterialModule, // .forRoot(),
+        MaterialModule,
 
         ErrorsModule,
         UsersModule,
+        NavigationModule,
+        ForecastsModule,
 
         AppRoutingModule
     ],

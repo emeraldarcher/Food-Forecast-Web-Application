@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'sg-nav',
+  selector: 'ff-nav',
   templateUrl: 'nav.component.pug',
   styleUrls: ['nav.component.scss']
 })

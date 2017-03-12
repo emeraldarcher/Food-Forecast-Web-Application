@@ -2,7 +2,7 @@ import { NgModule }              from '@angular/core';
 import { RouterModule, Routes }  from '@angular/router';
 
 const appRoutes: Routes = [
-    { path: '', redirectTo: '/my-forecast', pathMatch: 'full' },
+    { path: '', redirectTo: '/forecasts', pathMatch: 'full' },
     { path: '**', redirectTo: '/page-not-found', pathMatch: 'full' }
 ];
 
