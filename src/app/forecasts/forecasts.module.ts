@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 
-import { NavigationModule } from '../navigation/navigation.module';
+import { NavigationModule } from '../shared/navigation/navigation.module';
 
 import { ForecastsRoutingModule } from './forecasts-routing.module';
 
