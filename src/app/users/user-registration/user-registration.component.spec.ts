@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { LoginComponent } from './login.component';
+import { LoginComponent } from './user-registration.component';
 
 describe('Login', () => {
   beforeEach(() => {

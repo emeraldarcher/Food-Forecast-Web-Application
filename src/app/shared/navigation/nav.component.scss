@@ -39,5 +39,10 @@
         color: $secondary_text;
         background-color: $accent_color;
     }
+
+    a.logout {
+        cursor: pointer;
+        background-color: $primary_color;
+    }
 }
 

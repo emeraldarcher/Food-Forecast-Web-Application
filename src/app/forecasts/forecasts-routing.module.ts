@@ -4,8 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ForecastsComponent } from './forecasts.component';
 import { OneWeekComponent } from './one-week/one-week.component';
 import { TwoWeekComponent } from './two-week/two-week.component';
-import { ProvidersModule } from '../providers/providers.module';
-import { CanActivateViaAuthGuard } from '../providers/auth-guard.provider';
+import { ProvidersModule } from '../shared/providers/providers.module';
+import { CanActivateViaAuthGuard } from '../shared/providers/auth-guard.provider';
 
 const myForecastRoutes: Routes = [
     {
