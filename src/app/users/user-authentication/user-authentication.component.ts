@@ -6,7 +6,7 @@ import { AuthService } from '../../shared/services/auth.service';
   styleUrls: ['user-authentication.component.scss']
 })
 
-export class LoginComponent {
+export class UserAuthenticationComponent {
   private email: string;
   private password: string;
 

@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
-import { LoginComponent } from './user-authentication.component';
+import { UserAuthenticationComponent } from './user-authentication.component';
 
-describe('Login', () => {
+describe('Authentication', () => {
   beforeEach(() => {
-    TestBed.configureTestingModule({ declarations: [LoginComponent]});
+    TestBed.configureTestingModule({ declarations: [UserAuthenticationComponent]});
   });
   it ('should work', () => {
-    let fixture = TestBed.createComponent(LoginComponent);
-    expect(fixture.componentInstance instanceof LoginComponent).toBe(true, 'should create LoginComponent');
+    let fixture = TestBed.createComponent(UserAuthenticationComponent);
+    expect(fixture.componentInstance instanceof UserAuthenticationComponent).toBe(true, 'should create UserAuthenticationComponent');
   });
 });

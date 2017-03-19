@@ -7,6 +7,6 @@ describe('Login', () => {
   });
   it ('should work', () => {
     let fixture = TestBed.createComponent(LoginComponent);
-    expect(fixture.componentInstance instanceof LoginComponent).toBe(true, 'should create LoginComponent');
+    expect(fixture.componentInstance instanceof LoginComponent).toBe(true, 'should create UserAuthenticationComponent');
   });
 });

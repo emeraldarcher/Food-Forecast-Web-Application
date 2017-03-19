@@ -5,9 +5,9 @@ md-toolbar(color="primary")
     div(class="router-links")
         a(routerLink="/forecasts" md-raised-button color="primary" routerLinkActive="active") Forecasts
             i(class="fa fa-cloud")
-        a(routerLink="/menuplan" md-raised-button color="primary" routerLinkActive="active") Menu Plan
-            i(class="fa fa-calendar")
+        a(routerLink="/recipes" md-raised-button color="primary" routerLinkActive="active") Recipes
+            i(class="fa fa-list-alt")
         a(routerLink="/shoppinglist" md-raised-button color="primary" routerLinkActive="active") Shopping List
             i(class="fa fa-shopping-basket")
-        a(routerLink="/login" routerLinkActive="active" class="logout" '(click)'="logout()")
+        a(routerLink="/login" class="logout" '(click)'="logout()")
             i(class="fa fa-sign-out")

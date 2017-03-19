@@ -1,13 +1,17 @@
-div(class="login-wrapper")
-    md-card(class="login-card")
-        md-card-title Login
+div(class="registration-wrapper")
+    md-card(class="registration-card")
+        md-card-title Registration
         md-card-content
-            form(class="login-form")            
-                md-input-container(dividerColor="primary" class="login-full-width" floatPlaceholder="focus")
-                    md-placeholder Username
+            form(class="registration-form")
+                md-input-container(dividerColor="primary" class="registration-full-width" floatPlaceholder="always")
+                    md-placeholder Email
                     input(mdInput)
-                md-input-container(dividerColor="primary" class="login-full-width" floatPlaceholder="focus")
+                md-input-container(dividerColor="primary" class="registration-full-width" floatPlaceholder="always")
                     md-placeholder Password
                     input(type="password" mdInput)
-                
+                md-input-container(dividerColor="primary" class="registration-full-width" floatPlaceholder="always")
+                    md-placeholder Re-Enter Password
+                    input(type="password" mdInput)
+
         md-card-actions
+            button(md-raised-button color="primary" class="registration-full-width" '(click)'="register()") Register

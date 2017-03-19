@@ -5,7 +5,8 @@ import { FormsModule } from '@angular/forms';
 
 import { UsersRoutingModule } from './users-routing.module';
 
-import { LoginComponent } from './user-authentication/user-authentication.component';
+import { UserAuthenticationComponent } from './user-authentication/user-authentication.component';
+import { UserRegistrationComponent } from './user-registration/user-registration.component';
 
 @NgModule({
     imports: [
@@ -16,10 +17,12 @@ import { LoginComponent } from './user-authentication/user-authentication.compon
         UsersRoutingModule
     ],
     declarations: [
-        LoginComponent
+        UserAuthenticationComponent,
+        UserRegistrationComponent
     ],
     exports: [
-        LoginComponent
+        UserAuthenticationComponent,
+        UserRegistrationComponent
     ]
 })
 
