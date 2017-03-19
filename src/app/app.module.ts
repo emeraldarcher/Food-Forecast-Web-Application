@@ -7,6 +7,8 @@ import { ErrorsModule } from './errors/errors.module';
 import { UsersModule } from './users/users.module';
 import { ForecastsModule } from './forecasts/forecasts.module';
 import { NavigationModule } from './shared/navigation/navigation.module';
+import { ServicesModule } from './services/services.module';
+import { ProvidersModule } from './providers/providers.module';
 
 import { AppComponent } from './app.component';
 
@@ -19,6 +21,8 @@ import { AppComponent } from './app.component';
         UsersModule,
         NavigationModule,
         ForecastsModule,
+        ServicesModule,
+        ProvidersModule,
 
         AppRoutingModule
     ],
