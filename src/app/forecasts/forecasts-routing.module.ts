@@ -13,6 +13,7 @@ const myForecastRoutes: Routes = [
         component: ForecastsComponent,
         canActivate: [CanActivateViaAuthGuard],
         children: [
+            { path: '', redirectTo: 'weekly-forecast', pathMatch: 'full' },
             { path: 'weekly-forecast',  component: OneWeekComponent },
             { path: 'bi-weekly-forecast', component: TwoWeekComponent }
         ]
