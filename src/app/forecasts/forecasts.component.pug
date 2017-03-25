@@ -1,3 +1,9 @@
 ff-nav
 div(class="wrapper")
-    router-outlet
+    div(class="links")
+        a(routerLink="/forecasts/weekly-forecast" color="primary" routerLinkActive="active") Weekly Forecast
+        a(routerLink="/forecasts/bi-weekly-forecast" color="primary" routerLinkActive="active") Bi-weekly Forecast
+
+    div(class="content-wrapper")
+        div(class="content")
+            router-outlet

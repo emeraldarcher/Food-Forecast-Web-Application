@@ -1,4 +1,38 @@
 @import '../../../public/scss/mixins.scss';
 @import '../../../public/scss/variables.scss';
 
+.wrapper {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: $accent_color;
+  }
+
+  a.active {
+    background-color: $accent_color;
+    color: $secondary_text;
+    padding: 6px 6px 0 6px;
+    border-radius: 6px 6px 0 0;
+  }
+
+  a:first-child {
+    margin-right: 10px;
+  }
+
+}
+
+.content-wrapper {
+  border: 5px solid #FFEB3B;
+  border-radius: 0 6px 6px 6px;
+  padding: 5px;
+  margin-top: -1px;
+}
 
