@@ -7,6 +7,7 @@ import { ErrorsModule } from './errors/errors.module';
 import { UsersModule } from './users/users.module';
 import { ForecastsModule } from './forecasts/forecasts.module';
 import { RecipesModule } from './recipes/recipes.module';
+import { ShoppingModule } from './shopping/shopping.module';
 import { NavigationModule } from './shared/navigation/navigation.module';
 import { ServicesModule } from './shared/services/services.module';
 import { ProvidersModule } from './shared/providers/providers.module';
@@ -22,6 +23,7 @@ import { AppComponent } from './app.component';
         UsersModule,
         ForecastsModule,
         RecipesModule,
+        ShoppingModule,
         ServicesModule,
         ProvidersModule,
 
