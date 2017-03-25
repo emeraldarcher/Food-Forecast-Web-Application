@@ -6,6 +6,7 @@ import { MaterialModule } from '@angular/material';
 import { ErrorsModule } from './errors/errors.module';
 import { UsersModule } from './users/users.module';
 import { ForecastsModule } from './forecasts/forecasts.module';
+import { RecipesModule } from './recipes/recipes.module';
 import { NavigationModule } from './shared/navigation/navigation.module';
 import { ServicesModule } from './shared/services/services.module';
 import { ProvidersModule } from './shared/providers/providers.module';
@@ -20,6 +21,7 @@ import { AppComponent } from './app.component';
         ErrorsModule,
         UsersModule,
         ForecastsModule,
+        RecipesModule,
         ServicesModule,
         ProvidersModule,
 
