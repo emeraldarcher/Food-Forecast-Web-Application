@@ -64,6 +64,13 @@ module.exports = {
      __dirname
     ),
 
+    // Fixes more warnings
+    new webpack.ContextReplacementPlugin(
+        /angular(\\|\/)core(\\|\/)@angular/,
+        helpers.root('./src'),
+        {}
+    ),
+
     new HtmlWebpackPlugin({
       template: 'src/index.pug'
     })
